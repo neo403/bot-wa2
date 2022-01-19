@@ -116,7 +116,7 @@ Dhani.on("group-participants-update", async (anu) => {
  * @param {function} cb <optional> 
  */
 function nocache(module, cb = () => { }) {
-    console.log('Module', `'${module}'`, 'Sekarang Sedang Di Awasi Oleh DhaniGans !!')
+    console.log('Module', `'${module}'`, 'Sekarang Sedang Di Awasi Oleh JaeGans !!')
     fs.watchFile(require.resolve(module), async () => {
         await uncache(require.resolve(module))
         cb(module)
